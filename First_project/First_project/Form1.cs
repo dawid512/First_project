@@ -43,18 +43,18 @@ namespace First_project
 
                 var admin = "1";
                 admin.ToString();
-                var pracownik = 1;
+                var pracownik = "2";
                 //jan123 haslo512
 
 
-                if (valueRules = admin)
+                if (valueRules == admin)
                 {
                     this.Hide();
                     var FormAdmin = new FormAdmin();
                     FormAdmin.Closed += (s, args) => this.Close();
                     FormAdmin.Show();
                 }
-                else if (valueRules = pracownik)
+                else if (valueRules == pracownik)
                 {
 
                     this.Hide();
