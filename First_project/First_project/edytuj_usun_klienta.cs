@@ -68,8 +68,49 @@ namespace First_project
 
         }
 
+        string id;
+        int id1;
+        int delete_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
+
+            id = dataGridView1.Rows[e.RowIndex].Cells["id_klienta"].Value.ToString();
+
+            if (id == "") 
+            {
+                id1 = 0;
+            }
+            else
+            {
+                id1 = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id_klienta"].Value.ToString());
+            }
+
+            if (id1 == 0) { 
+            }else
+            {
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Update [simple_order_processing].[dbo].[Klient] set Imie='" + dataGridView1.Rows[e.RowIndex].Cells["Imie"].Value.ToString() + "',Nazwisko='" + dataGridView1.Rows[e.RowIndex].Cells["Nazwisko"].Value.ToString() + "',telefon='" + dataGridView1.Rows[e.RowIndex].Cells["telefon"].Value.ToString() + "',[e-mail]='" + dataGridView1.Rows[e.RowIndex].Cells["e-mail"].Value.ToString() + "',adres='" + dataGridView1.Rows[e.RowIndex].Cells["adres"].Value.ToString() + "' Where id_klienta=" + id+";";
+                cmd.ExecuteNonQuery();
+                fill_grid();
+            }
+
 
         }
 
@@ -86,6 +127,25 @@ namespace First_project
         private void button4_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void usuńToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Delete from [simple_order_processing].[dbo].[Klient] where id_klienta=" + delete_id + ";";
+            cmd.ExecuteNonQuery();
+            fill_grid();
+        }
+
+        private void dataGridView1_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                delete_id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id_klienta"].Value.ToString());
+                this.contextMenuStrip1.Show(this.dataGridView1, e.Location);
+                contextMenuStrip1.Show(Cursor.Position);
+            }
         }
     }
 }
