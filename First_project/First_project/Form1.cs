@@ -81,5 +81,10 @@ namespace First_project
             dr.Close();
             
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Nie używać Entera, tylko kliknąć zaloguj");
+        }
     }
 }
