@@ -81,18 +81,6 @@
     <Compile Include="dodaj_klienta.Designer.cs">
       <DependentUpon>dodaj_klienta.cs</DependentUpon>
     </Compile>
-    <Compile Include="dodaj_produkt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="dodaj_produkt.Designer.cs">
-      <DependentUpon>dodaj_produkt.cs</DependentUpon>
-    </Compile>
-    <Compile Include="edytuj_produkt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="edytuj_produkt.Designer.cs">
-      <DependentUpon>edytuj_produkt.cs</DependentUpon>
-    </Compile>
     <Compile Include="edytuj_usun_klienta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,12 +92,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAdmin.Designer.cs">
-      <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Klient.cs">
       <SubType>Form</SubType>
@@ -131,20 +113,11 @@
     <EmbeddedResource Include="dodaj_klienta.resx">
       <DependentUpon>dodaj_klienta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dodaj_produkt.resx">
-      <DependentUpon>dodaj_produkt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="edytuj_produkt.resx">
-      <DependentUpon>edytuj_produkt.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="edytuj_usun_klienta.resx">
       <DependentUpon>edytuj_usun_klienta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormAdmin.resx">
-      <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Klient.resx">
       <DependentUpon>Klient.cs</DependentUpon>

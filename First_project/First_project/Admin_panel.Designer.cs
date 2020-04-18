@@ -62,6 +62,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Zamówienia";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
             // 
             // button3
             // 
@@ -71,6 +72,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Produkty";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
             // 
             // button2
             // 
@@ -80,6 +82,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Pracownicy";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             // 
             // button1
             // 
@@ -129,6 +132,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(680, 141);
             this.textBox1.TabIndex = 3;
+            this.textBox1.Visible = false;
             // 
             // Admin_panel
             // 

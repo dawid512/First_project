@@ -67,10 +67,12 @@ namespace First_project
                 else if (valueRules == pracownik)
                 {
 
-                    this.Hide();
-                    var FormAdmin = new FormAdmin();
-                    FormAdmin.Closed += (s, args) => this.Close();
-                    FormAdmin.Show();
+                    //this.Hide();
+                    //var FormAdmin = new FormAdmin();
+                    // FormAdmin.Closed += (s, args) => this.Close();
+                    // FormAdmin.Show();
+
+                    MessageBox.Show("Inna wersja aplikacji dla pracownika będzie budowana podczas 2 projektu");
                 }
             }else
                 {
