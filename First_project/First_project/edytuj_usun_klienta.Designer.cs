@@ -1,0 +1,233 @@
+﻿namespace First_project
+{
+    partial class edytuj_usun_klienta
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtid_klienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtImie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbxNazwisko = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtTelefon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtemail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtadres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(643, 160);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(610, 67);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Edytuj lub Usuń Klienta";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(270, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1410, 100);
+            this.panel2.TabIndex = 26;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1159, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(200, 69);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Wyloguj";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(270, 1007);
+            this.panel1.TabIndex = 25;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(0, 536);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(267, 93);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Zamówienia";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(0, 394);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(267, 93);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Produkty";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(0, 260);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(267, 93);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Pracownicy";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 134);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(267, 93);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Klient";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.txtid_klienta,
+            this.txtImie,
+            this.cbxNazwisko,
+            this.txtTelefon,
+            this.txtemail,
+            this.txtadres});
+            this.dataGridView1.Location = new System.Drawing.Point(309, 288);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
+            this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.Size = new System.Drawing.Size(1285, 678);
+            this.dataGridView1.TabIndex = 38;
+            // 
+            // txtid_klienta
+            // 
+            this.txtid_klienta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.txtid_klienta.DataPropertyName = "id_klienta";
+            this.txtid_klienta.HeaderText = "id_klienta";
+            this.txtid_klienta.MinimumWidth = 10;
+            this.txtid_klienta.Name = "txtid_klienta";
+            this.txtid_klienta.Width = 149;
+            // 
+            // txtImie
+            // 
+            this.txtImie.DataPropertyName = "Imie";
+            this.txtImie.HeaderText = "Imie";
+            this.txtImie.MinimumWidth = 10;
+            this.txtImie.Name = "txtImie";
+            this.txtImie.Width = 200;
+            // 
+            // cbxNazwisko
+            // 
+            this.cbxNazwisko.DataPropertyName = "Nazwisko";
+            this.cbxNazwisko.HeaderText = "Nazwisko";
+            this.cbxNazwisko.MinimumWidth = 10;
+            this.cbxNazwisko.Name = "cbxNazwisko";
+            this.cbxNazwisko.Width = 200;
+            // 
+            // txtTelefon
+            // 
+            this.txtTelefon.DataPropertyName = "telefon";
+            this.txtTelefon.HeaderText = "Telefon";
+            this.txtTelefon.MinimumWidth = 10;
+            this.txtTelefon.Name = "txtTelefon";
+            this.txtTelefon.Width = 200;
+            // 
+            // txtemail
+            // 
+            this.txtemail.DataPropertyName = "[e-mail]";
+            this.txtemail.HeaderText = "e-mail";
+            this.txtemail.MinimumWidth = 10;
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Width = 200;
+            // 
+            // txtadres
+            // 
+            this.txtadres.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.txtadres.DataPropertyName = "adres";
+            this.txtadres.HeaderText = "adres";
+            this.txtadres.MinimumWidth = 10;
+            this.txtadres.Name = "txtadres";
+            // 
+            // edytuj_usun_klienta
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1680, 1007);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Name = "edytuj_usun_klienta";
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtid_klienta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtImie;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cbxNazwisko;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtTelefon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtemail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtadres;
+    }
+}

@@ -9,6 +9,6 @@ namespace First_project
 {
     class Context
     {
-        SqlConnection sqlcon = new SqlConnection(@"Data Source=DAWIDMDRALA4760;Initial Catalog=simple_order_processing;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+       public static string  sqlconnection = (@"Data Source=DAWIDMDRALA4760;Initial Catalog=simple_order_processing;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
     }
 }

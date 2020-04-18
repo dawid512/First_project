@@ -33,8 +33,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.19\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,9 +63,42 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.19\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_panel.Designer.cs">
+      <DependentUpon>Admin_panel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Context.cs" />
+    <Compile Include="dodaj_klienta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dodaj_klienta.Designer.cs">
+      <DependentUpon>dodaj_klienta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dodaj_produkt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dodaj_produkt.Designer.cs">
+      <DependentUpon>dodaj_produkt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edytuj_produkt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edytuj_produkt.Designer.cs">
+      <DependentUpon>edytuj_produkt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edytuj_usun_klienta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edytuj_usun_klienta.Designer.cs">
+      <DependentUpon>edytuj_usun_klienta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,10 +111,46 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Klient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klient.Designer.cs">
+      <DependentUpon>Klient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pracownik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pracownik.Designer.cs">
+      <DependentUpon>pracownik.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin_panel.resx">
+      <DependentUpon>Admin_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dodaj_klienta.resx">
+      <DependentUpon>dodaj_klienta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dodaj_produkt.resx">
+      <DependentUpon>dodaj_produkt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edytuj_produkt.resx">
+      <DependentUpon>edytuj_produkt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edytuj_usun_klienta.resx">
+      <DependentUpon>edytuj_usun_klienta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klient.resx">
+      <DependentUpon>Klient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pracownik.resx">
+      <DependentUpon>pracownik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +161,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
