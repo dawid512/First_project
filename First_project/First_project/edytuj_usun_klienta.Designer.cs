@@ -37,12 +37,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtid_klienta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtImie = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbxNazwisko = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtTelefon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtemail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtadres = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -132,68 +126,12 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.txtid_klienta,
-            this.txtImie,
-            this.cbxNazwisko,
-            this.txtTelefon,
-            this.txtemail,
-            this.txtadres});
             this.dataGridView1.Location = new System.Drawing.Point(309, 288);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(1285, 678);
             this.dataGridView1.TabIndex = 38;
-            // 
-            // txtid_klienta
-            // 
-            this.txtid_klienta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.txtid_klienta.DataPropertyName = "id_klienta";
-            this.txtid_klienta.HeaderText = "id_klienta";
-            this.txtid_klienta.MinimumWidth = 10;
-            this.txtid_klienta.Name = "txtid_klienta";
-            this.txtid_klienta.Width = 149;
-            // 
-            // txtImie
-            // 
-            this.txtImie.DataPropertyName = "Imie";
-            this.txtImie.HeaderText = "Imie";
-            this.txtImie.MinimumWidth = 10;
-            this.txtImie.Name = "txtImie";
-            this.txtImie.Width = 200;
-            // 
-            // cbxNazwisko
-            // 
-            this.cbxNazwisko.DataPropertyName = "Nazwisko";
-            this.cbxNazwisko.HeaderText = "Nazwisko";
-            this.cbxNazwisko.MinimumWidth = 10;
-            this.cbxNazwisko.Name = "cbxNazwisko";
-            this.cbxNazwisko.Width = 200;
-            // 
-            // txtTelefon
-            // 
-            this.txtTelefon.DataPropertyName = "telefon";
-            this.txtTelefon.HeaderText = "Telefon";
-            this.txtTelefon.MinimumWidth = 10;
-            this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Width = 200;
-            // 
-            // txtemail
-            // 
-            this.txtemail.DataPropertyName = "[e-mail]";
-            this.txtemail.HeaderText = "e-mail";
-            this.txtemail.MinimumWidth = 10;
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Width = 200;
-            // 
-            // txtadres
-            // 
-            this.txtadres.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.txtadres.DataPropertyName = "adres";
-            this.txtadres.HeaderText = "adres";
-            this.txtadres.MinimumWidth = 10;
-            this.txtadres.Name = "txtadres";
             // 
             // edytuj_usun_klienta
             // 
@@ -205,6 +143,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "edytuj_usun_klienta";
+            this.Load += new System.EventHandler(this.edytuj_usun_klienta_Load);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -223,11 +162,5 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtid_klienta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtImie;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cbxNazwisko;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtTelefon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtemail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtadres;
     }
 }

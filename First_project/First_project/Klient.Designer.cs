@@ -128,6 +128,7 @@
             this.button7.TabIndex = 27;
             this.button7.Text = "Edytuj lub usuń klienta";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Klient
             // 

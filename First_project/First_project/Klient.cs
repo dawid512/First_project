@@ -34,5 +34,14 @@ namespace First_project
             logowanie.Closed += (s, args) => this.Close();
             logowanie.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var edytuj_Usun_Klienta = new edytuj_usun_klienta();
+
+            edytuj_Usun_Klienta.Closed += (s, args) => this.Close();
+            edytuj_Usun_Klienta.Show();
+        }
     }
 }
